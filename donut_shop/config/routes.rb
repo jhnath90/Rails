@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :donuts
+  get '/about' => 'donuts#about'
 
   root to: 'donuts#home'
   # The priority is based upon order of creation: first created -> highest priority.
