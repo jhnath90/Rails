@@ -1,10 +1,13 @@
 
-<div class="jumbotron">
+<div>
   <center>
     <h1><%= @donut.name %></h1>
-    <img src="<%= @donut.image %>" class="image-responsive">
+    <img src="<%= @donut.image %>" class="image-r">
   </center>
+  <div class="more" style="filter: alpha(opacity=60); opacity: .9;">
   <h3>Icing: <%= @donut.icing %></h3>
   <h3>Toppings: <%= @donut.toppings %></h3>
   <h3>Cost: <%= @donut.cost %></h3>
+  </div>
+  
   </div>

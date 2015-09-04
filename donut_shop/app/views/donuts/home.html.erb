@@ -1,10 +1,47 @@
 <div>
 
 	<center>
-		<h1 class="welcome">Welcome to Deez Donuts!</h1>
+		<h1 class="welcome">Welcome to D's Donuts!</h1>
 
-		<img src="http://www.torontolife.com/wp-content/uploads/2013/06/jelly-modern-intro.jpg">
-		<br>
+		
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active carousel_pics">
+      <img src="http://cdn1.bostonmagazine.com/wp-content/uploads/2014/03/Union-Donuts-1.jpg" alt="Chania">
+    </div>
+
+    <div class="item carousel_pics">
+      <img src="http://static1.squarespace.com/static/5510dd93e4b03d83964427d0/t/556f24e1e4b06197ef8df265/1433347313373/Glazed25.jpg?format=1500w" alt="Chania">
+    </div>
+
+    <div class="item carousel_pics">
+      <img src="http://d3a005dv9q91mu.cloudfront.net/uploads/2015/04/DSC_0081.jpg" alt="Flower">
+    </div>
+
+    <div class="item carousel_pics">
+      <img src="http://cravedfw.files.wordpress.com/2012/08/pookies-13.jpg" alt="Flower">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 		<%= link_to "Gaht Eeeeemmm!", donuts_path, class: "btn btn-default" %>
 	</center>

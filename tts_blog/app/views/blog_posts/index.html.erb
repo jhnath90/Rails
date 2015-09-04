@@ -12,13 +12,15 @@
            <%= link_to blog_post.title, blog_post %>
            </div>
              <div class="panel-body">
-             By: <%= blog_post.author %><br> 
+             By: <%= link_to blog_post.user.username, user_posts_path(id: blog_post.user.id) %><br> 
              Posted at: <%= blog_post.created_at.strftime('%m/%d/%Y at %I:%M%p') %><br> <!-- time formating -->
              <p><%= blog_post.blog_entry[0..250] %>...[<%= link_to "READ MORE", blog_post %>]</p>
              </div>
            <div class="panel-footer">
+           <% if current_user.id == blog_post.user.id %>
            <%= link_to 'Edit', edit_blog_post_path(blog_post), class: "btn btn-warning" %>
            <%= link_to 'Destroy', blog_post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+           <% end %>
            </div>
          </div>
     </div>

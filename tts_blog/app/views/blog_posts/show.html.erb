@@ -5,7 +5,7 @@
 		<%= @blog_post.title %>
 	</div>
 	<div class="panel-body">
-	<p>by <%= @blog_post.author %></p>
+	<p>by <%= link_to @blog_post.user.username, user_posts_path(id: @blog_post.user.id) %></p>
 	Posted at: <%= @blog_post.created_at.strftime('%m/%d/%Y at %I:%M%p') %>
 	<p><%= @blog_post.blog_entry %></p>
 	
@@ -27,7 +27,7 @@
 
 <% @blog_post.comments.each do |comment| %>
 <div class="panel-body">
-	<p><strong><%= comment.author %></strong></p>
+	<p><strong><%= link_to comment.user.username, user_posts_path(id: comment.user.id) %></strong></p>
 	Posted at: <%= comment.created_at.strftime('%m/%d/%Y at %H:%M:%S') %>
 	<p><%= comment.comment_entry %></p>
 </div>
@@ -35,6 +35,7 @@
 </div>
 </div>
 
-
+<% if current_user.id == @blog_post.user.id%>
 <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
+<% end %>
 <%= link_to 'Back', blog_posts_path %>

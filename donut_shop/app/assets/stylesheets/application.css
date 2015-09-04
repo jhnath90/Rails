@@ -20,7 +20,6 @@
 }
 
 .jumbotron {
-	background-color: lightgrey;
   width: 600px;
   height: 700px;
   margin-left: 330px;
@@ -37,16 +36,16 @@
 	background-color: white;
 
   }
+.navbar-default{
+  background-color: #86e7b8;
 
-  .navbar-default {
-  	background-color: black;
-  	border-color: black;
-  }
+}
 
 
 
 h1 {
 	color: white;
+  font-size: 50px;
   text-align: center;
    text-shadow:
     -1px -1px 0 #000,
@@ -56,7 +55,7 @@ h1 {
 
 }
 
-.image-responsive {
+.image-r {
   height: 150px;
   width: 150px;
 }
@@ -64,10 +63,46 @@ h1 {
 .thumbnail {
   height: 325px;
   width: 500px;
+ }
+
+.about {
+  width: 600px;
+  height: 200px;
+  background-color: white;
+  border: solid lightblue;
+  border-radius: 10px;
+  margin-left: 340px;
 }
 
+.footer-float-right {
+  float: right;
+
+}
+
+.btn-primary {
+  float: right;
+  margin-bottom: 50px;
+}
+
+
+.more{
+  text-align: center;
+  background-color: white;
+}
+
+
+footer {
+  background-color: #86e7b8;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+
 body {
-  background-image: url(https://img1.etsystatic.com/034/0/5317124/il_340x270.627463419_7kn9.jpg)
+  background-image: url(http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=55145800)
 }
 
 img {
@@ -76,5 +111,16 @@ img {
   border: solid lightblue;
   border-radius: 10px;
 }
+
+p {
+  font-size: 15px;
+}
+
+i {
+  height:30px;
+  width: 30px;
+}
+
+
 
 
