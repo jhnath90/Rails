@@ -14,6 +14,151 @@
  *= require_self
  */
 
+body {
+	background-color: white;
+}
+
+.navbar {
+	background-color: black;
+}
+
+
+
+.site-footer {
+	display: block;
+	background-color: black;
+	height: 50px;
+	color: white;
+	margin-top: 300px;
+
+
+
+}
+
+
+
+.social {
+	float: right;
+	display: inline-block;
+}
+
+footer h6 {
+	font-size: 15px;
+	
+}
+
+p {
+	display: block;
+	font-size: 40px;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+	padding-top: 65px;
+	font-size: 100px;
+	width: 900px;
+}
+
+header {
+	background-color: black;
+	height: 150px;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	font-size: 125px;
+	padding-top: 95px;
+}
+
+
 .pizza_pic {
-	margin: auto;
+
+	margin-right: auto;
+	width: 350px;
+	height: 350px;
+	display: block;
+	border-radius: 10px;
+	padding-bottom: 40px;
+	margin-top: 25px;
+	float:left
+}
+
+.btn {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 150px;
+	background-color: white;
+	margin-top: 80px;
+}
+
+.home_welcome {
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	margin-bottom: 25px;
+	font-size: 125px;
+	font-style: bold;
+}
+
+.homepage {
+	margin-left: 200px;
+
+}
+
+.about_us1 {
+	font-size: 30px;
+	width: 100%;
+	
+}
+
+.about_us2 {
+	font-size: 30px;
+	width: 100%;
+	
+	
+}
+
+.social {
+    margin: 0;
+    padding: 0;
+     height: 20px;
+}
+
+.social ul {
+    height: 20px;
+}
+
+.social ul li {
+    margin-left: 10px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.jumbotron{
+	font-family: 'Amatic SC', cursive;
 }

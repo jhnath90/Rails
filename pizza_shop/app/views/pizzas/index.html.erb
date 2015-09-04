@@ -1,4 +1,6 @@
-<h1>All of our Pizza's</h1>
+<link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+
+<header>Our Pizza</header>
 <div class="row">
 <% @pizzas.each do |pizza| %>
   <div class="col-sm-6 col-md-4">
@@ -15,5 +17,7 @@
 </div>
 
 <br>
+
+
 
 <%= link_to 'New Pizza', new_pizza_path, class: "btn btn-primary" %>
